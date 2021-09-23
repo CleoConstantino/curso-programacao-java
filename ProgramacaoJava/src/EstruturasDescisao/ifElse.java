@@ -4,17 +4,20 @@ package EstruturasDescisao;
 public class ifElse {
 
 	public static void main(String[] args) {
-		//Declarando e inicializando uma variÃ¡vel;
-		int numero = 5;
+		//Declarando e inicializando uma variável;
+		int numero = 2;
 		
 		if(numero > 5) {
-			System.out.println("Sim, o nÃºmero " + numero + " Ã© maior que 5!");
+			System.out.println("Sim, o número " + numero + " é maior que 5!");
 		}
 		else if (numero == 5){
-			System.out.println("O nÃºmero " + numero + " Ã© igual 5!");
+			System.out.println("O número " + numero + " é igual 5!");
+		}
+		else if (numero % 2 == 0) {
+			System.out.println("O número " + numero + " é par!");
 		}
 		else {
-			System.out.println("NÃ£o, o nÃºmero " + numero + " nÃ£o Ã© maior de 5!");
+			System.err.println("Não, o número " + numero + " não é maior de 5!");
 		}
 
 	}
